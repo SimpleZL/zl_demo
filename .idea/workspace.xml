@@ -272,6 +272,9 @@
       <dir>D:\work-code\zl_demo\other_demo\src\main\java\com\zl</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -397,6 +400,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -405,6 +409,10 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="zl_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zl_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
             <path>
               <item name="zl_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
@@ -804,12 +812,12 @@
       <workItem from="1568087787803" duration="506000" />
       <workItem from="1568285375318" duration="9854000" />
       <workItem from="1569748248279" duration="927000" />
-      <workItem from="1571139744882" duration="111903000" />
+      <workItem from="1571139744882" duration="112185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="584851000" />
+    <option name="totallyTimeSpent" value="585133000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -823,7 +831,7 @@
   <component name="ToolWindowManager">
     <frame x="-131" y="-1088" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7635575" visible="true" weight="0.21268657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7635575" visible="true" weight="0.21268657" />
       <window_info id="Structure" order="1" sideWeight="0.88286334" weight="0.27025586" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -838,7 +846,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Web" order="8" weight="0.28958786" />
       <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27982646" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2801303" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.38503253" />
       <window_info anchor="bottom" id="JProfiler" order="13" />
