@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.sohu.smc:service-user-client:2.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/service-user-client/2.2-SNAPSHOT/service-user-client-2.2-20180730.034432-193.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/service-user-client/2.2-SNAPSHOT/service-user-client-2.2-20180730.034432-193-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/service-user-client/2.2-SNAPSHOT/service-user-client-2.2-20180730.034432-193-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

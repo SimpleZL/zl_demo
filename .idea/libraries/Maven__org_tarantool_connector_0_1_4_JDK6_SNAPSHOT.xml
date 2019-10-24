@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.tarantool:connector:0.1.4-JDK6-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/tarantool/connector/0.1.4-JDK6-SNAPSHOT/connector-0.1.4-JDK6-20130407.141242-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/tarantool/connector/0.1.4-JDK6-SNAPSHOT/connector-0.1.4-JDK6-20130407.141242-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/tarantool/connector/0.1.4-JDK6-SNAPSHOT/connector-0.1.4-JDK6-20130407.141242-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

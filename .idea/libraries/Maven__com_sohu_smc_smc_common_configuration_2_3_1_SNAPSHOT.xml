@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.sohu.smc:smc-common-configuration:2.3.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/repo/com/sohu/smc/smc-common-configuration/2.3.1-SNAPSHOT/smc-common-configuration-2.3.1-20180712.074151-175.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repo/com/sohu/smc/smc-common-configuration/2.3.1-SNAPSHOT/smc-common-configuration-2.3.1-20180712.074151-175-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repo/com/sohu/smc/smc-common-configuration/2.3.1-SNAPSHOT/smc-common-configuration-2.3.1-20180712.074151-175-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

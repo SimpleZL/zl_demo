@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.sohu.smc:smc-common-http-server:2.8-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/smc-common-http-server/2.8-SNAPSHOT/smc-common-http-server-2.8-20170113.094742-35.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/smc-common-http-server/2.8-SNAPSHOT/smc-common-http-server-2.8-20170113.094742-35-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/smc-common-http-server/2.8-SNAPSHOT/smc-common-http-server-2.8-20170113.094742-35-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

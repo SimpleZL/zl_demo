@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.sohu.smc:smc-common-zookeeper-client:2.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://D:/repo/com/sohu/smc/smc-common-zookeeper-client/2.0-SNAPSHOT/smc-common-zookeeper-client-2.0-20161214.125411-7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repo/com/sohu/smc/smc-common-zookeeper-client/2.0-SNAPSHOT/smc-common-zookeeper-client-2.0-20161214.125411-7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repo/com/sohu/smc/smc-common-zookeeper-client/2.0-SNAPSHOT/smc-common-zookeeper-client-2.0-20161214.125411-7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

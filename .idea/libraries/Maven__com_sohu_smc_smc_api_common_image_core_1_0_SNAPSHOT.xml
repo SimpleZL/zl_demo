@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.sohu.smc:smc-api-common-image-core:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/smc-api-common-image-core/1.0-SNAPSHOT/smc-api-common-image-core-1.0-20191010.084243-122.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/smc-api-common-image-core/1.0-SNAPSHOT/smc-api-common-image-core-1.0-20191010.084243-122-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/smc-api-common-image-core/1.0-SNAPSHOT/smc-api-common-image-core-1.0-20191010.084243-122-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: com.sohu.smc:smc-common-archaius:2.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/smc-common-archaius/2.0-SNAPSHOT/smc-common-archaius-2.0-20161214.024544-9.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/smc-common-archaius/2.0-SNAPSHOT/smc-common-archaius-2.0-20161214.024544-9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/sohu/smc/smc-common-archaius/2.0-SNAPSHOT/smc-common-archaius-2.0-20161214.024544-9-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/archaius/archaius-core/2.0.0-rc.7/archaius-core-2.0.0-rc.7.jar!/" />
+    </SOURCES>
+  </library>
+</component>
