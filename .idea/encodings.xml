@@ -2,8 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/other_demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/other_demo/hystrix-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/other" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/other/hystrix-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sdr_demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-demo" charset="UTF-8" />
   </component>

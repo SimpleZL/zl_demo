@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db.properties">
+        <!--    属性配置加载顺序
+     1. 元素体内的元素第三优先级
+     2. resource指定的文件 第二优先级
+     3. 方法指定参数为第一优先级
+    -->
+        <!--        开始属性默认值 -->
+        <property name="org.apache.ibatis.parsing.PropertyParser.ENABLE_DEFAULT_VALUE" value="true"/>
+    </properties>
+
+
+    <typeAliases>
+        <!--        类的别名-->
+        <typeAlias alias="people" type="mybaties.bean.People"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <!--            采用jdbc事务管理-->
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/zl_demo?serverTimezone=GMT&amp;useSSL=false"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--    定义映射器-->
+    <mappers>
+        <mapper resource="mapper.xml"/>
+    </mappers>
+</configuration>
