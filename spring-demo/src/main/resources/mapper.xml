@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<!-- ELEMENT mapper (cache-ref | cache | resultMap* | parameterMap* | sql* | insert* | update* | delete* | select* )+>-->
+<!-- ELEMENT mapper (cache-ref | cache | resultMap*  | sql* | insert* | update* | delete* | select* )+>-->
 <mapper namespace="mybaties.namespace.RoleMapper">
-    <select id="getUser" parameterType="int" resultType="mybaties.bean.People">
-      select id,name,sex,m from p where id=#{id}
+    <resultMap id="userMap" type="people">
+        <result column="sex" property="sex" typeHandler="mybaties.handler.SexEnumTypeHandler"/>
+    </resultMap>
+    <select id="getUser" parameterType="int" resultType="people" resultMap="userMap">
+      select id,user_name,sex,m from p where id=#{id}
   </select>
+
+    <select id="getUserByMap" resultMap="userMap">
+      select id,user_name,sex ,m from p where id = #{id} and sex = #{sex}
+  </select>
+    <insert id="insertUser" parameterType="people" useGeneratedKeys="true">
+        insert into p (user_name,sex,m) values (#{userName},#{sex,typeHandler=mybaties.handler.SexEnumTypeHandler},#{m})
+    </insert>
+
 </mapper>

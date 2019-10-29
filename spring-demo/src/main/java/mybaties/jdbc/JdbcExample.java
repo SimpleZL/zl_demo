@@ -35,9 +35,9 @@ public class JdbcExample {
             People people = new People();
             while (resultSet.next()) {
                 people.setId(resultSet.getInt("id"));
-                people.setName(resultSet.getString("name"));
+                people.setUserName(resultSet.getString("name"));
                 people.setM(resultSet.getString("m_m"));
-                people.setSex(resultSet.getString("sex"));
+//                people.setSex(resultSet.getString("sex"));
             }
             return people;
         } catch ( SQLException e ) {

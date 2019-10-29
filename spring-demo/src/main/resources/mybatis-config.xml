@@ -9,26 +9,61 @@
      2. resource指定的文件 第二优先级
      3. 方法指定参数为第一优先级
     -->
-        <!--        开始属性默认值 -->
-        <property name="org.apache.ibatis.parsing.PropertyParser.ENABLE_DEFAULT_VALUE" value="true"/>
     </properties>
-
+    <settings>
+        <!--        开启缓存开关-->
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="false"/>
+        <setting name="aggressiveLazyLoading" value="true"/>
+        <!--        是否允许单一语句返回多个结果集-->
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <setting name="useColumnLabel" value="true"/>
+        <!--   true:强制使用自动生成主键-->
+        <setting name="useGeneratedKeys" value="false"/>
+        <!--        指定Mybatis如何自动映射列字段或属性 PARTIAL 只会映射没有定义嵌套结果集的映射  -->
+        <setting name="autoMappingBehavior" value="PARTIAL"/>
+        <!--        执行器类型-SIMPLE 、REUSE 执行器会重用预处理语句、BATCH 执行器将重用语句并执行批量更新-->
+        <setting name="defaultExecutorType" value="SIMPLE"/>
+        <!--        是否自动驼峰映射  a_column -> aColumn -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--        本地缓存的scope ，默认是sqlSession-->
+        <setting name="localCacheScope" value="SESSION"/>
+    </settings>
 
     <typeAliases>
-        <!--        类的别名-->
-        <typeAlias alias="people" type="mybaties.bean.People"/>
+        <package name="mybaties.bean"/>
     </typeAliases>
 
-    <environments default="development">
-        <environment id="development">
-            <!--            采用jdbc事务管理-->
-            <transactionManager type="JDBC"/>
+    <typeHandlers>
+        <typeHandler handler="mybaties.handler.MyStringTypeHandler"/>
+<!--        <typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="mybaties.enums.Sex"/>-->
+    </typeHandlers>
+
+    <objectFactory type="mybaties.handler.MyObjectFactory">
+        <property name="myObjectFactory" value="MyObjectFactory"/>
+    </objectFactory>
+    <environments default="test">
+        <environment id="dev">
+            <!-- 采用jdbc事务管理-->
+            <transactionManager type="JDBC">
+                <property name="autoCommit" value="true"/>
+            </transactionManager>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url"
-                          value="jdbc:mysql://localhost:3306/zl_demo?serverTimezone=GMT&amp;useSSL=false"/>
-                <property name="username" value="root"/>
-                <property name="password" value="123456"/>
+                <property name="url" value="${zl_demo_url}"/>
+                <property name="username" value="${zl_demo_user}"/>
+                <property name="password" value="${zl_demo_pwd}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="test">
+            <!--            采用jdbc事务管理-->
+            <transactionManager type="JDBC"/>
+            <dataSource type="mybaties.datasource.HikaricpDataSource">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="${zl_demo_url}"/>
+                <property name="username" value="${zl_demo_user}"/>
+                <property name="password" value="${zl_demo_pwd}"/>
             </dataSource>
         </environment>
     </environments>
