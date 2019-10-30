@@ -39,11 +39,16 @@ public class MybatisUtil {
         SqlSession sqlSession = sessionFactory.openSession();
         //获取映射
         RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
-        HashMap<String, Integer> map = new HashMap<>(2);
-        map.put("id", 4);
-        map.put("sex", Sex.FEMALE.getId());
-        People user = roleMapper.getUserByMap(4, 2);
-        System.out.println(user.getUserName());
+//        HashMap<String, Integer> map = new HashMap<>(2);
+//        map.put("id", 4);
+//        map.put("sex", Sex.FEMALE.getId());
+//        People user = roleMapper.getUserByMap(4, 2);
+        People people = new People();
+        people.setUserName("李四");
+        people.setSex(Sex.FEMALE);
+        people.setM("李四加油");
+        roleMapper.insertUser(people);
+        System.out.println(people.getUserName());
         sqlSession.commit();
     }
 }
