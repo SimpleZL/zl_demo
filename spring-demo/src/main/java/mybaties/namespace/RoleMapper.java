@@ -20,4 +20,8 @@ public interface RoleMapper {
     People getUserByMap(@Param("id") Integer id,@Param("sex") Integer sex);
 
     void insertUser(People people);
+
+    int updateUser(@Param("id") Integer id,@Param("name") String name);
+
+    int deleteUser(int id);
 }

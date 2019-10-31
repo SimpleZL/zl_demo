@@ -3,20 +3,40 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- ELEMENT mapper (cache-ref | cache | resultMap*  | sql* | insert* | update* | delete* | select* )+>-->
 <mapper namespace="mybaties.namespace.RoleMapper">
+    <sql id="user_columns">
+        id,user_name,sex,m
+    </sql>
+    <cache eviction="LRU" readOnly="false"  size="1024" />
     <resultMap id="userMap" type="people">
+
         <result column="sex" property="sex" typeHandler="mybaties.handler.SexEnumTypeHandler"/>
     </resultMap>
     <select id="getUser" parameterType="int" resultType="people" resultMap="userMap">
-      select id,user_name,sex,m from p where id=#{id}
-  </select>
+        select
+        <include refid="user_columns"/>
+        from p where id=#{id}
+    </select>
+
     <select id="getUserByMap" resultMap="userMap">
-      select id,user_name,sex ,m from p where id = #{id} and sex = #{sex}
-  </select>
+        select
+        <include refid="user_columns"/>
+        from p where id = #{id} and sex = #{sex}
+    </select>
+
     <insert id="insertUser" parameterType="people" useGeneratedKeys="true">
         <selectKey keyProperty="id" resultType="int" order="BEFORE">
             select if(max(id) is null ,1,max(id)+2) from p
         </selectKey>
-        insert into p (id,user_name,sex,m) values (#{id},#{userName},#{sex,typeHandler=mybaties.handler.SexEnumTypeHandler},#{m})
+        insert into p (id,user_name,sex,m) values
+        (#{id},#{userName},#{sex,typeHandler=mybaties.handler.SexEnumTypeHandler},#{m})
     </insert>
+
+    <update id="updateUser">
+        update p set user_name =#{name} where id=#{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="int">
+        delete  from p where id=#{id}
+    </delete>
 
 </mapper>

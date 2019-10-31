@@ -6,6 +6,8 @@ import lombok.Setter;
 import mybaties.enums.Sex;
 import org.apache.ibatis.type.Alias;
 
+import java.io.Serializable;
+
 /**
  * Created with IntelliJ IDEA.
  * Description:
@@ -15,7 +17,9 @@ import org.apache.ibatis.type.Alias;
  */
 @Data
 @Alias(value = "people")
-public class People {
+public class People implements Serializable {
+
+    private static final long serialVersionUID = -6347908111187372201L;
     private int id;
     private String userName;
     private Sex sex;

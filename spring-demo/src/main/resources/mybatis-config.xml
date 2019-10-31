@@ -13,8 +13,10 @@
     <settings>
         <!--        开启缓存开关-->
         <setting name="cacheEnabled" value="true"/>
-        <setting name="lazyLoadingEnabled" value="false"/>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--        按层级加载-->
         <setting name="aggressiveLazyLoading" value="true"/>
+<!--        <setting name="lazyLoadTriggerMethods" value=""/>-->
         <!--        是否允许单一语句返回多个结果集-->
         <setting name="multipleResultSetsEnabled" value="true"/>
         <setting name="useColumnLabel" value="true"/>
@@ -35,13 +37,13 @@
     </typeAliases>
 
     <typeHandlers>
-        <typeHandler handler="mybaties.handler.MyStringTypeHandler"/>
-<!--        <typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="mybaties.enums.Sex"/>-->
+        <!--        <typeHandler handler="mybaties.handler.MyStringTypeHandler"/>-->
+        <!--        <typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="mybaties.enums.Sex"/>-->
     </typeHandlers>
 
-    <objectFactory type="mybaties.handler.MyObjectFactory">
-        <property name="myObjectFactory" value="MyObjectFactory"/>
-    </objectFactory>
+    <!--    <objectFactory type="mybaties.handler.MyObjectFactory">-->
+    <!--        <property name="myObjectFactory" value="MyObjectFactory"/>-->
+    <!--    </objectFactory>-->
     <environments default="test">
         <environment id="dev">
             <!-- 采用jdbc事务管理-->
@@ -70,5 +72,9 @@
     <!--    定义映射器-->
     <mappers>
         <mapper resource="mapper.xml"/>
+        <mapper resource="studentCardMapper.xml"/>
+        <mapper resource="studentMapper.xml"/>
+        <mapper resource="sujectMapper.xml"/>
+        <mapper resource="subjectScoreMapper.xml"/>
     </mappers>
 </configuration>
