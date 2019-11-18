@@ -1,7 +1,7 @@
 package com.zl.lombok;
 
 import lombok.Value;
-import org.junit.validator.ValidateWith;
+
 
 /**
  * Created with IntelliJ IDEA.

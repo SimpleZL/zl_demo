@@ -4,6 +4,8 @@ import com.zaxxer.hikari.HikariDataSource;
 import org.apache.ibatis.datasource.DataSourceFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.util.Properties;
@@ -15,6 +17,7 @@ import java.util.Properties;
  * @author: liangzhang212928
  * @Date: 2019-10-29
  */
+@Component(value = "hikariDataSource")
 public class HikaricpDataSource implements DataSourceFactory {
     private Properties properties;
     private Logger logger = LoggerFactory.getLogger(HikaricpDataSource.class);

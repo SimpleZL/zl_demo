@@ -45,7 +45,6 @@ public class MybatisUtil {
     public static void main(String[] args) {
         SqlSessionFactory sessionFactory = getSessionFactory();
         SqlSession sqlSession = sessionFactory.openSession();
-        SqlSession sqlSession1 = sessionFactory.openSession();
         //获取映射
 
 
@@ -55,19 +54,12 @@ public class MybatisUtil {
 //        logger.info(student.getStudentCard().toString());
 
         RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
-        RoleMapper roleMapper1 = sqlSession1.getMapper(RoleMapper.class);
         HashMap<String, Integer> map = new HashMap<>(2);
         map.put("id", 4);
         map.put("sex", Sex.FEMALE.getId());
         logger.info("同一个session 第一次查询！");
         People user = roleMapper.getUserByMap(4, 2);
-        logger.info("同一个session 第2次查询！");
-        People user1 = roleMapper.getUserByMap(4, 2);
         sqlSession.commit();
-        logger.info("第二个session 查询");
-        People userByMap = roleMapper1.getUserByMap(4, 2);
-        sqlSession1.commit();
-
 
 
 

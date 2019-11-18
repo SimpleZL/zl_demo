@@ -15,6 +15,14 @@
         select
         <include refid="user_columns"/>
         from p where id=#{id}
+<!--        <choose>-->
+<!--            <when test="int">-->
+<!--                -->
+<!--            </when>-->
+<!--            <otherwise>-->
+<!--                -->
+<!--            </otherwise>-->
+<!--        </choose>-->
     </select>
 
     <select id="getUserByMap" resultMap="userMap">

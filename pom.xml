@@ -8,6 +8,7 @@
     <modules>
         <module>other</module>
         <module>spring-demo</module>
+        <module>dubbo-demo</module>
     </modules>
     <packaging>pom</packaging>
 
