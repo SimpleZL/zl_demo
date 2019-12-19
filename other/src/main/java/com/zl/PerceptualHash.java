@@ -140,18 +140,7 @@ public class PerceptualHash {
     }
 
     public static void main(String[] args) {
-        Set<String> sets = Sets.newConcurrentHashSet();
-        sets.add("1");
-        sets.add("2");
-        sets.add("3");
-        sets.add("4");
-        sets.add("5");
-        sets.add("6");
-        AtomicBoolean flag = new AtomicBoolean(false);
-        sets.parallelStream().forEach(set -> {
-            if (set.equals(5)) {
-                flag.set(true);
-            }
-        });
+        String s = picFingerPrint("http://8c86958988f20.cdn.sohucs.com/smccloud/2019/12/12/157613669379013593.jpg");
+        System.out.println(s);
     }
 }

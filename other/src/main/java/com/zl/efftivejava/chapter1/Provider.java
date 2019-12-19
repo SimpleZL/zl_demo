@@ -5,4 +5,5 @@ package com.zl.efftivejava.chapter1;
  * on 2019/11/20
  */
 public interface Provider {
+    Service newService();
 }

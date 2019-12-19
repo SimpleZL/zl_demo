@@ -1,6 +1,7 @@
 package com.zl;
 
-import com.alibaba.fastjson.JSON;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,6 +12,11 @@ import com.alibaba.fastjson.JSON;
  */
 public class Test {
     public static void main(String[] args) {
-        System.out.println();
+        LinkedHashMap<String, String> hashMap = new LinkedHashMap<String, String>() {
+            @Override
+            protected boolean removeEldestEntry(Map.Entry<String, String> eldest) {
+                return size() > 3;
+            }
+        };
     }
 }
