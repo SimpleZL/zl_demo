@@ -1,9 +1,10 @@
 package mybaties.namespace;
 
-import com.sohu.smc.moment.dto.dao.model.NewsTvInfo;
+import mybaties.bean.NewsTvInfo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.mybatis.spring.annotation.MapperScan;
 
 /**
  * Created with IntelliJ IDEA.

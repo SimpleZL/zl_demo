@@ -1,4 +1,4 @@
-package com.sohu.smc.moment.dto.dao.model;
+package mybaties.bean;
 
 import lombok.Data;
 

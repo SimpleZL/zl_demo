@@ -1,4 +1,4 @@
-package mybaties.bean;
+package mybatisSpring.model;
 
 import lombok.Data;
 
