@@ -2,6 +2,7 @@ package mybaties;
 
 import mybaties.bean.NewsTvInfo;
 import mybaties.namespace.NewsTvInfoMapper;
+import mybaties.testmapper.Test;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -15,11 +16,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MybatieSpringMain {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringJdbcConf.class);
-
-
-        SqlSessionTemplate cmsROSqlSessionTemplate = (SqlSessionTemplate) context.getBean("cmsRoSqlSessionTemplate");
-        NewsTvInfoMapper newsTvInfoMapper = cmsROSqlSessionTemplate.getMapper(NewsTvInfoMapper.class);
+        SqlSessionTemplate cmsRwSqlSessionTemplate = (SqlSessionTemplate) context.getBean("cmsRwSqlSessionTemplate");
+        SqlSessionTemplate cmsRoSqlSessionTemplate = (SqlSessionTemplate) context.getBean("cmsRoSqlSessionTemplate");
+        NewsTvInfoMapper newsTvInfoMapper = cmsRwSqlSessionTemplate.getMapper(NewsTvInfoMapper.class);
         NewsTvInfo byVid = newsTvInfoMapper.findByVid(9102910);
         System.out.println(byVid.getBigPic());
+        Test newsTvInfoMapper1 = cmsRoSqlSessionTemplate.getMapper(Test.class);
+
     }
 }
