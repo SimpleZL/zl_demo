@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.lang.Exception</OriginalElement>
+  <nodes>
+    <node x="561.1057692307693" y="90.0">java.lang.Throwable</node>
+    <node x="252.50000000000006" y="360.0">java.lang.StackOverflowError</node>
+    <node x="186.88461538461542" y="180.0">java.lang.Error</node>
+    <node x="1253.5" y="270.0">java.io.IOException</node>
+    <node x="620.0" y="270.0">java.lang.RuntimeException</node>
+    <node x="933.5" y="270.0">java.lang.ReflectiveOperationException</node>
+    <node x="730.5" y="360.0">java.lang.ClassCastException</node>
+    <node x="1015.2115384615386" y="180.0">java.lang.Exception</node>
+    <node x="482.50000000000006" y="360.0">java.lang.NullPointerException</node>
+    <node x="547.6057692307693" y="0.0">java.io.Serializable</node>
+    <node x="248.00000000000006" y="270.0">java.lang.VirtualMachineError</node>
+    <node x="960.5" y="360.0">java.lang.ClassNotFoundException</node>
+    <node x="0.0" y="270.0">java.lang.NoClassDefFoundError</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.lang.ReflectiveOperationException" target="java.lang.Exception">
+      <point x="0.0" y="-20.0" />
+      <point x="1083.5" y="245.0" />
+      <point x="1079.7115384615386" y="245.0" />
+      <point x="0.0" y="20.0" />
+    </edge>
+    <edge source="java.lang.Throwable" target="java.io.Serializable">
+      <point x="0.0" y="-20.0" />
+      <point x="0.0" y="20.0" />
+    </edge>
+    <edge source="java.io.IOException" target="java.lang.Exception">
+      <point x="0.0" y="-20.0" />
+      <point x="1327.0" y="245.0" />
+      <point x="1122.7115384615386" y="245.0" />
+      <point x="43.0" y="20.0" />
+    </edge>
+    <edge source="java.lang.NullPointerException" target="java.lang.RuntimeException">
+      <point x="0.0" y="-20.0" />
+      <point x="596.5" y="335.0" />
+      <point x="668.0" y="335.0" />
+      <point x="-48.0" y="20.0" />
+    </edge>
+    <edge source="java.lang.NoClassDefFoundError" target="java.lang.Error">
+      <point x="0.0" y="-20.0" />
+      <point x="114.0" y="245.0" />
+      <point x="210.13461538461542" y="245.0" />
+      <point x="-23.25" y="20.0" />
+    </edge>
+    <edge source="java.lang.Error" target="java.lang.Throwable">
+      <point x="0.0" y="-20.0" />
+      <point x="233.38461538461542" y="155.0" />
+      <point x="593.3557692307693" y="155.0" />
+      <point x="-32.25" y="20.0" />
+    </edge>
+    <edge source="java.lang.ClassNotFoundException" target="java.lang.ReflectiveOperationException">
+      <point x="0.0" y="-20.0" />
+      <point x="0.0" y="20.0" />
+    </edge>
+    <edge source="java.lang.RuntimeException" target="java.lang.Exception">
+      <point x="0.0" y="-20.0" />
+      <point x="716.0" y="245.0" />
+      <point x="1036.7115384615386" y="245.0" />
+      <point x="-43.0" y="20.0" />
+    </edge>
+    <edge source="java.lang.Exception" target="java.lang.Throwable">
+      <point x="0.0" y="-20.0" />
+      <point x="1079.7115384615386" y="155.0" />
+      <point x="657.8557692307693" y="155.0" />
+      <point x="32.25" y="20.0" />
+    </edge>
+    <edge source="java.lang.ClassCastException" target="java.lang.RuntimeException">
+      <point x="0.0" y="-20.0" />
+      <point x="835.5" y="335.0" />
+      <point x="764.0" y="335.0" />
+      <point x="48.0" y="20.0" />
+    </edge>
+    <edge source="java.lang.StackOverflowError" target="java.lang.VirtualMachineError">
+      <point x="0.0" y="-20.0" />
+      <point x="0.0" y="20.0" />
+    </edge>
+    <edge source="java.lang.VirtualMachineError" target="java.lang.Error">
+      <point x="0.0" y="-20.0" />
+      <point x="357.50000000000006" y="245.0" />
+      <point x="256.6346153846154" y="245.0" />
+      <point x="23.25" y="20.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="707.0" y="336.5" />
+  <SelectedNodes>
+    <node>java.lang.ClassCastException</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
